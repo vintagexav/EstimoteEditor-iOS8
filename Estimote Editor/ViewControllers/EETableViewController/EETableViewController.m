@@ -85,8 +85,13 @@
 	for (NSString *UUIDString in [[EEDataProvider sharedInstance] regionIdentifierHistory]) {
 		[self startRangingRegionWithUUID:UUIDString];
 	}
-	
-	[[[EEDataProvider sharedInstance] regionIdentifierHistory] addObject:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
+    
+    //[self startRangingRegionWithUUID:@"YOUR UUID"];
+    [self startRangingRegionWithUUID:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]; //Estimote's UUID
+    
+    //[[[EEDataProvider sharedInstance] regionIdentifierHistory] addObject:@"YOUR UUID"];
+    [[[EEDataProvider sharedInstance] regionIdentifierHistory] addObject:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]; //Estimote's UUID
+    
 }
 
 #pragma mark - Internal
